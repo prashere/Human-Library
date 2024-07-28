@@ -1,0 +1,286 @@
+@charset "ISO-8859-1";
+#sidebar {
+  padding-bottom: 30px;
+  top: 10px;
+  border-right: 2px solid #f3b0bd;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+  bottom: 0;
+}
+#sidebar .logo {
+  margin: 10px 0px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+#sidebar #logo {
+  font-size: 30px;
+  width: auto;
+  color: #f0718a;
+}
+#sidebar .icons {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200px 0px;
+}
+#sidebar .icons i,
+.sidebar .options i {
+  margin: 10px 0px;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 50%;
+  width: auto;
+  color: #485878;
+}
+#sidebar .icons .active,
+#sidebar .options .active {
+  background-color: #fa897b;
+  color: white;
+}
+body {
+  overflow-x: hidden;
+}
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  margin-left: 7%;
+  position: relative;
+}
+.container-right {
+  width: 30%;
+  background-color: rgb(255, 230, 175);
+}
+.user {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #f0718a;
+  border-radius: 50%;
+  top: 10%;
+  left: 55%;
+}
+.edit-container {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+.edit-holder {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid #fa897b;
+  border-radius: 50%;
+  bottom: -20px;
+  right: -50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.edit-holder i {
+  font-size: 20px;
+  color: #fa897b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-left {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  box-sizing: border-box;
+}
+.user-details {
+  height: auto;
+}
+
+.post-holder {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  flex-wrap: wrap;
+}
+.row1,
+.row2 {
+  position: relative;
+  width: 48%;
+  background-color: #fa897b;
+  height: 100%;
+  border-radius: 20px;
+  height: 250px;
+  background-image: url("images/download\ \(9\).jpg");
+  box-shadow: 3px 3px 15px 0px #485878;
+  opacity: 0.8;
+  background-size: cover;
+}
+#row1-top {
+  width: 95%;
+  background-image: url("images/blue.jpg");
+}
+.curved-rectangle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
+  background-color: white;
+  border-top: solid 10px #fa897b;
+  border-top-left-radius: 50% 20px;
+  border-top-right-radius: 50% 20px;
+}
+.recent-posts {
+  width: 80%;
+    padding-top:100px;
+}
+.recent-posts h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #485878;
+  padding-bottom: 5px;
+  position: relative;
+  display: inline;
+}
+.recent-posts h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fa897b;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 35%;
+}
+.user-details h1 {
+  font-family: "Caveat", cursive;
+  color: #f0718a;
+  font-size: 60px;
+  margin-bottom: 15px;
+  margin-top:0px;
+}
+.user-details p {
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #485878;
+  font-size: 15px;
+  text-align: justify;
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: "Caveat", cursive;
+  color: #485878;
+  font-size: 40px;
+}
+/*edit*/
+.edit-heading {
+  font-size: 30px;
+  font-family: "Montserrat", "sans-serif";
+  color: #485878;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 90%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form input[type="password"],
+.edit-form input[type="date"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.edit-form button {
+  background-color: #f0718a;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.edit-form p{
+	color: #f0718a;
+	font-family: "Montserrat", sans-serif;
+}
+.edit-form img{
+	margin-bottom: 30px;
+}
+.edit-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.change-password-form {
+  margin-top: 50px;
+}
+
+.change-password-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.change-password-form #change-password-btn,
+.change-password-form #confirm-change-btn {
+  background-color: #4caf50;
+  margin-bottom:25px;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.delete-profile {
+  background-color: #f0718a; /* Red */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 3% 40%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+

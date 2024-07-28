@@ -1,0 +1,132 @@
+@charset "ISO-8859-1";
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  margin-left: 5%;
+  padding: 50px 200px;
+  flex-direction: column;
+}
+.stat-holder {
+  height: 8vh;
+  border-top: 2px solid #f69a8e;
+  border-bottom: 2px solid #f69a8e;
+  display: flex;
+  align-items: center;
+}
+.user {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.user span,
+p,
+.stat-holder span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #485878;
+}
+.profile {
+  
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.user button, .user i{
+	font-size:20px;
+}
+.stat-holder i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #f0718a;
+}
+.main-container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #485878;
+  margin-bottom: 35px;
+}
+.main-container span {
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.content {
+  text-align: justify;
+}
+.comment-section {
+  margin-top: 50px;
+  border-top: solid 2px  #f0718a;
+}
+
+.comment-section textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.comment-section button {
+  background-color: #485878;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.comment-display {
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f69a8e;
+  margin-right: 10px;
+}
+
+.comment-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.comment-post {
+  margin-bottom: 20px;
+}
+.forms{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	margin-top:60px;
+}
+.edit,.delete{
+	display:inline;
+}
+.edit button, .delete button{
+	 background-color: #f0718a; /* Red */
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 3% 5%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px
+}

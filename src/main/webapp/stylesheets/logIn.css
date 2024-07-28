@@ -1,0 +1,100 @@
+@charset "ISO-8859-1";
+body {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  padding: 5% 20%;
+  background-color: rgb(255, 230, 175);
+  opacity: 0.9;
+  display: flex;
+  box-sizing: border-box;
+}
+.main-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.img-container img {
+  height: 100%;
+  width: auto;
+  margin-left: -30%;
+  border-radius: 20px;
+}
+.form {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: -6%;
+}
+.form p{
+	font-size:12px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.form form h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #485878;
+  text-align: center;
+}
+/* Style the input fields */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+  padding: 15px;
+  border-radius: 50px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+/* Add focus effect on the input fields */
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Style the submit button */
+.form button {
+  background-color: #fa897b;
+  color: white;
+  padding: 7px 14px;
+  font-size: 20px;
+  font-family: "Caveat", sans-serif;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 50px;
+}
+
+/* Add hover effect on the submit button */
+.form button:hover {
+  opacity: 1;
+}
+.link-to-register {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #485878;
+}
+.custom-files-upload {
+  font-family: "Caveat", sans-serif;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  
+}
+
